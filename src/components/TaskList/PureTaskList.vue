@@ -26,7 +26,7 @@
 </template>
 
 <script>
-  import Task from './Task';
+  import Task from '../Task/Task';
   export default {
     name: 'pure-task-list',
     props: {

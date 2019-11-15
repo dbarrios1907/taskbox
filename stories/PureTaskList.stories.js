@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import { task } from './Task.stories';
 
-import TaskList from './PureTaskList';
+import TaskList from '../src/components/TaskList/PureTaskList';
 import { methods } from './Task.stories';
 
 export const defaultTaskList = [

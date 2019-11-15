@@ -5,8 +5,8 @@
 </template>
 
 <script>
-  import store from './store';
-  import InboxScreen from './components/InboxScreen.vue';
+  import store from './state-management/store';
+  import InboxScreen from './components/InboxScreen/InboxScreen.vue';
   export default {
     name: 'app',
     store,

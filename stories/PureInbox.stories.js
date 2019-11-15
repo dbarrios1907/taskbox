@@ -4,7 +4,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import { defaultTaskList } from './PureTaskList.stories';
-import PureInboxScreen from './PureInboxScreen.vue';
+import PureInboxScreen from '../src/components/InboxScreen/PureInboxScreen.vue';
 
 Vue.use(Vuex);
 export const store = new Vuex.Store({

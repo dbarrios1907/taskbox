@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import TaskList from './TaskList.vue';
+  import TaskList from '../TaskList/TaskList.vue';
 
   export default {
     name: 'pure-inbox-screen',
