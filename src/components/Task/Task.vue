@@ -16,8 +16,11 @@
 </template>
 
 <script>
-
+  /**
+   * Use `Task` to visually display a item within a list or as an independent visual component!
+   */
   export default {
+    title: 'Vue/Task',
     name: 'task',
     props: {
       task: {

@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import PureTaskList from '../../src/components/PureTaskList.vue';
-import { withPinnedTasks } from '../../src/components/PureTaskList.stories';
+import PureTaskList from '../../src/components/TaskList/PureTaskList.vue';
+import { withPinnedTasks } from '../../stories/PureTaskList.stories';
 
 it('renders pinned tasks at the start of the list', () => {
   const Constructor = Vue.extend(PureTaskList);

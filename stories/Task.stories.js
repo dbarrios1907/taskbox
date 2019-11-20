@@ -24,12 +24,7 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      props: {
-        task: {
-          type: Object,
-          default: object("task", { ...task })
-        }
-      },
+      data: () => ({ task: { ...task } }),
       methods
     };
   })
