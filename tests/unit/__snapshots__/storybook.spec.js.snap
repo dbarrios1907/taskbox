@@ -17,6 +17,26 @@ exports[`Storyshots PureInboxScreen default 1`] = `
       </h1>
     </nav>
      
+    <div
+      class="add-task-container"
+    >
+      <input
+        placeholder="Add task"
+        type="text"
+      />
+       
+      <button
+        class="btn-add-task"
+      >
+        <span
+          class="icon-plus"
+        />
+        
+    Add
+  
+      </button>
+    </div>
+     
     <div>
       <div>
         <!---->
