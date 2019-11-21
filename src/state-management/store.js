@@ -10,7 +10,7 @@ export default new Vuex.Store({
       { id: '2', title: 'Something more', state: 'TASK_INBOX' },
       { id: '3', title: 'Something else', state: 'TASK_INBOX' },
       { id: '4', title: 'Something again', state: 'TASK_INBOX' },
-    ],
+    ]
   },
   mutations: {
     ARCHIVE_TASK(state, id) {
@@ -26,6 +26,6 @@ export default new Vuex.Store({
     },
     pinTask({ commit }, id) {
       commit('PIN_TASK', id);
-    },
-  },
+    }
+  }
 });

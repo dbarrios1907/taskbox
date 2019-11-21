@@ -1306,6 +1306,25 @@
     regenerator-runtime "^0.12.1"
     ts-dedent "^1.1.0"
 
+"@storybook/addon-storysource@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.2.6.tgz#5b42e07d44fbdd0a41018f26a575eee98ac52c5f"
+  integrity sha512-3cqixGHrX6oYcaOWRwHVgD9KlSlwjspNZs5FsyRcoh5Gm0M3kXFah0UWHYqGy/JxSA2uGg47bXVTRmkydvSvyQ==
+  dependencies:
+    "@storybook/addons" "5.2.6"
+    "@storybook/components" "5.2.6"
+    "@storybook/router" "5.2.6"
+    "@storybook/source-loader" "5.2.6"
+    "@storybook/theming" "5.2.6"
+    core-js "^3.0.1"
+    estraverse "^4.2.0"
+    loader-utils "^1.2.3"
+    prettier "^1.16.4"
+    prop-types "^15.7.2"
+    react-syntax-highlighter "^8.0.1"
+    regenerator-runtime "^0.12.1"
+    util-deprecate "^1.0.2"
+
 "@storybook/addon-viewport@^5.2.6":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.2.6.tgz#1ee72bebfde857f460e534ab7f7d591daa844c56"

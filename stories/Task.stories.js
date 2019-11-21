@@ -24,7 +24,7 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      data: () => ({ task: { ...task } }),
+      data: () => ({ task: object("task", { ...task }) }),
       methods
     };
   })
