@@ -18,10 +18,6 @@ export const store = new Vuex.Store({
     archiveTask(context, id) {
       action('archiveTask')(id);
     },
-
-    addTask(context, title) {
-      action('addTask')(title);
-    }
   },
 });
 
