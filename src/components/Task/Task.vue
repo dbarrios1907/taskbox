@@ -43,6 +43,9 @@
 </script>
 
 <style lang="scss">
+  .list-item {
+    background: red;
+  }
   .list-item .actions {
     padding-right: 16px;
     padding-left: 5px;
