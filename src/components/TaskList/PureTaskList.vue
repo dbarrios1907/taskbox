@@ -57,6 +57,6 @@
           ...this.tasks.filter(t => t.state !== 'TASK_PINNED'),
         ];
       },
-    },
+    }
   };
 </script>

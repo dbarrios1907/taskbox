@@ -19,6 +19,14 @@ export default new Vuex.Store({
     PIN_TASK(state, id) {
       state.tasks.find(task => task.id === id).state = 'TASK_PINNED';
     },
+
+    ADD_TASK(state, title) {
+      state.tasks.push({
+        id: state.tasks.length + 1,
+        title,
+        state: 'TASK_INBOX'
+      });
+    }
   },
   actions: {
     archiveTask({ commit }, id) {
@@ -26,6 +34,10 @@ export default new Vuex.Store({
     },
     pinTask({ commit }, id) {
       commit('PIN_TASK', id);
+    },
+    addTask({ commit }, title) {
+      console.log(title);
+      commit('ADD_TASK', title);
     }
   }
 });

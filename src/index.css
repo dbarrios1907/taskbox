@@ -862,9 +862,7 @@
    text-align: center;
    color: #eee;
  }
- .list-item .actions a:hover {
-   color: #2cc5d2;
- }
+ 
  .list-item .actions a:active {
    color: #555;
  }
@@ -880,12 +878,7 @@
  .list-item.TASK_ARCHIVED input[type="text"] {
    color: #aaa;
  }
- .list-item:hover {
-   background-image: linear-gradient(to bottom, #e5f9f7 0%, #f0fffd 100%);
- }
- .list-item:hover .checkbox {
-   cursor: pointer;
- }
+ 
  .list-item + .list-item {
    border-top: 1px solid #f0f9fb;
  }

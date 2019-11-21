@@ -13,6 +13,7 @@
                     <span class="title-wrapper">Taskbox</span>
                 </h1>
             </nav>
+            <add-task @addTask="$emit('addTask', $event)" />
             <task-list />
         </div>
     </div>
@@ -20,6 +21,7 @@
 
 <script>
   import TaskList from '../TaskList/TaskList.vue';
+  import AddTask from '../AddTask/AddTask.vue';
 
   export default {
     name: 'pure-inbox-screen',
@@ -31,6 +33,7 @@
     },
     components: {
       TaskList,
-    },
+      AddTask,
+    }
   };
 </script>
