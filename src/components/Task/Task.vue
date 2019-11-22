@@ -20,7 +20,7 @@
    * Use `Task` to visually display a item within a list or as an independent visual component!
    */
   export default {
-    title: 'Vue/Task',
+    title: 'Task',
     name: 'task',
     data() {
       return { hover: false };
@@ -29,6 +29,7 @@
       task: {
         type: Object,
         required: true,
+        default: () => ({})
       },
     },
     computed: {
@@ -43,9 +44,6 @@
 </script>
 
 <style lang="scss">
-  .list-item {
-    background: red;
-  }
   .list-item .actions {
     padding-right: 16px;
     padding-left: 5px;
@@ -62,5 +60,4 @@
       color: #c3c7ce;
     }
   }
-
 </style>

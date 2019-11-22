@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots AddTask default 1`] = `
+<div
+  class="add-task-container"
+>
+  <input
+    placeholder="Add task"
+    type="text"
+  />
+   
+  <button
+    class="btn-add-task"
+  >
+    <span
+      class="icon-plus"
+    />
+    
+    Add
+  
+  </button>
+</div>
+`;
+
 exports[`Storyshots PureInboxScreen default 1`] = `
 <div>
   <div

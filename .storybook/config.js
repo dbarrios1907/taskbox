@@ -5,7 +5,7 @@ import '../src/index.css';
 addDecorator(withA11y);
 
 
-// const req = require.context('../src', true, /\.stories.js$/);
+// const req = require.context('../stories', true, /\.stories.js$/);
 // function loadStories() {
 //   req.keys().forEach(filename => req(filename));
 // }

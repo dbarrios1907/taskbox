@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from "@storybook/addon-knobs";
-
 import Task from '../src/components/Task/Task';
 
 export const task = {
@@ -24,7 +23,12 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      data: () => ({ task: object("task", { ...task }) }),
+      props: {
+        task: {
+          type: Object,
+          default: () => object("task", { ...task })
+        }
+      },
       methods
     };
   })
@@ -32,7 +36,12 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      data: () => ({ task: { ...task, state: "TASK_PINNED" } }),
+      props: {
+        task: {
+          type: Object,
+          default: () => object("task", { ...task, state: "TASK_PINNED"})
+        }
+      },
       methods
     };
   })
@@ -40,7 +49,12 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      data: () => ({ task: { ...task, state: "TASK_ARCHIVED" } }),
+      props: {
+        task: {
+          type: Object,
+          default: () => object("task", { ...task, state: "TASK_ARCHIVED"})
+        }
+      },
       methods
     };
   })
@@ -48,7 +62,12 @@ storiesOf("Task", module)
     return {
       components: { Task },
       template: `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`,
-      data: () => ({ task: { ...task, title: longTitle } }),
+      props: {
+        task: {
+          type: Object,
+          default: () => object("task", { ...task, title: longTitle })
+        }
+      },
       methods
     };
   });
